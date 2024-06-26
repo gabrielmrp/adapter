@@ -6,9 +6,8 @@ from abc import ABC, abstractmethod
 #common data interface
 class DataAdapter(ABC): 
     def __init__(self,field_mapping = None, envelope = None):
-        self.field_mapping = None  # Inicializa o field_mapping como None
-
-    @abstractmethod
+        self.field_mapping = None  # Inicializa o field_mapping como None 
+     
     def convert_to_json(self, file_path):
         pass
 
